@@ -185,7 +185,7 @@ export default function Home() {
       <div className="topline" />
       <header className="site-header">
         <a href="#top" className="brand" onClick={closeMenu} aria-label="Great Media Enterprise home">
-          <img className="header-logo-image" src="/manus-storage/GreatNewLogo_13d22c09.png" alt="Great Media Enterprise logo" />
+          <img className="header-logo-image" src="/assets/great-media-logo.png" alt="Great Media Enterprise logo" />
           <span className="brand-name">Great Media <em>Enterprise</em></span>
         </a>
 
@@ -204,7 +204,7 @@ export default function Home() {
       <main id="top">
         <section className="hero-section">
           <div className="hero-visual" aria-hidden="true">
-            <img src="/manus-storage/gme-hero_ddd68fa0.png" alt="" />
+            <img src="/assets/gme-hero.png" alt="" />
             <div className="hero-visual-tint" />
           </div>
           <div className="hero-grid" aria-hidden="true" />
@@ -290,7 +290,7 @@ export default function Home() {
         <section className="approach-section" id="approach">
           <div className="container approach-layout">
             <div className="approach-art">
-              <img src="/manus-storage/gme-showcase_1bec4965.png" alt="Abstract collage of digital strategy and research elements" />
+              <img src="/assets/gme-showcase.png" alt="Abstract collage of digital strategy and research elements" />
               <div className="art-label mono">GME / FIELD NOTES / 001</div>
               <div className="art-corner art-corner-tl" />
               <div className="art-corner art-corner-br" />
@@ -346,7 +346,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="container footer-top">
-          <a href="#top" className="brand"><img className="footer-logo-image" src="/manus-storage/GreatNewLogo_13d22c09.png" alt="Great Media Enterprise logo" /><span className="brand-name">Great Media <em>Enterprise</em></span></a>
+          <a href="#top" className="brand"><img className="footer-logo-image" src="/assets/great-media-logo.png" alt="Great Media Enterprise logo" /><span className="brand-name">Great Media <em>Enterprise</em></span></a>
           <p>Digital clarity for ambitious businesses.</p>
           <div className="footer-socials">{socials.map(({ label, href, icon: Icon }) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}><Icon size={16} /></a>)}</div>
         </div>
