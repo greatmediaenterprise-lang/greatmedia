@@ -213,7 +213,7 @@ export default function Home() {
               <span className="eyebrow-dot" />
               <span>Independent digital agency</span>
               <span className="eyebrow-line" />
-              <span className="mono">LAGOS / 06:24 PM</span>
+              <span className="mono">NIGERIA</span>
             </div>
             <div className="hero-copy">
               <h1 className="hero-title reveal-up delay-1">
