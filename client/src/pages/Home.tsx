@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import {
   ArrowDownRight,
   ArrowRight,
@@ -7,18 +7,33 @@ import {
   Check,
   ChevronDown,
   Code2,
+  Facebook,
   FileSearch,
   Globe2,
+  Instagram,
+  Linkedin,
+  Mail,
   Menu,
   MessageCircle,
   MousePointer2,
   PenLine,
   Quote,
   Sparkles,
+  Twitter,
   X,
+  Youtube,
 } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/2348165772892";
+const EMAIL_ADDRESS = "greatmediaenterprise@gmail.com";
+
+const socials = [
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/146283095/", icon: Linkedin },
+  { label: "Instagram", href: "https://www.instagram.com/greatmediaenterprise/", icon: Instagram },
+  { label: "YouTube", href: "https://www.youtube.com/@GREATMEDIAENTERPRISE", icon: Youtube },
+  { label: "Facebook", href: "https://www.facebook.com/osebike.okoh", icon: Facebook },
+  { label: "X", href: "https://x.com/Grei2up", icon: Twitter },
+];
 
 const services = [
   {
@@ -91,6 +106,32 @@ function WhatsAppButton({ label = "Start a conversation", className = "" }: { la
       <span>{label}</span>
       <ArrowUpRight size={16} strokeWidth={2.4} />
     </a>
+  );
+}
+
+function ContactForm() {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const service = String(formData.get("service") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+    const subject = encodeURIComponent(`New Great Media enquiry${service ? ` — ${service}` : ""}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nService: ${service}\n\nMessage:\n${message}`);
+    window.location.href = `mailto:${EMAIL_ADDRESS}?subject=${subject}&body=${body}`;
+  };
+
+  return (
+    <form className="contact-form" onSubmit={handleSubmit}>
+      <div className="form-grid">
+        <label><span>Name</span><input name="name" type="text" placeholder="Your name" required /></label>
+        <label><span>Email</span><input name="email" type="email" placeholder="you@company.com" required /></label>
+      </div>
+      <label><span>What can we help with?</span><select name="service" defaultValue=""><option value="" disabled>Select a service</option><option>Digital Marketing</option><option>Web Development</option><option>AI Solutions</option><option>Software Websites</option><option>Project Writing & Research</option><option>Something else</option></select></label>
+      <label><span>Tell us a little about it</span><textarea name="message" placeholder="What are you building, and where are you right now?" rows={4} required /></label>
+      <div className="form-submit-row"><button className="form-submit" type="submit"><Mail size={16} /> Send enquiry <ArrowUpRight size={16} /></button><span className="form-note">Opens your email app to send to {EMAIL_ADDRESS}</span></div>
+    </form>
   );
 }
 
@@ -256,7 +297,8 @@ export default function Home() {
             <div className="section-kicker mono">/ YOUR NEXT CHAPTER</div>
             <h2>Have a good idea?<br /><span>Let’s make it real.</span></h2>
             <p>No decks. No runaround. Just a direct line to the team that can help you move it forward.</p>
-            <WhatsAppButton label="Chat with Great Media Enterprise" className="contact-cta" />
+            <div className="contact-actions"><WhatsAppButton label="Chat on WhatsApp" className="contact-cta" /><span className="or-label mono">OR</span><a className="email-link" href={`mailto:${EMAIL_ADDRESS}`}><Mail size={16} /> Email us</a></div>
+            <ContactForm />
             <div className="contact-details"><span className="mono">WHATSAPP / +234 816 577 2892</span><span className="detail-separator" /><span className="mono">MON—FRI / 09:00—18:00 WAT</span></div>
           </div>
         </section>
@@ -264,11 +306,11 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="container footer-top">
-          <a href="#top" className="brand"><LogoMark /><span className="brand-name">Great Media <em>Enterprise</em></span></a>
+          <a href="#top" className="brand"><img className="footer-logo-image" src="/manus-storage/GreatNewLogo_13d22c09.png" alt="Great Media Enterprise logo" /><span className="brand-name">Great Media <em>Enterprise</em></span></a>
           <p>Digital clarity for ambitious businesses.</p>
-          <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="footer-link">WhatsApp us <ArrowUpRight size={16} /></a>
+          <div className="footer-socials">{socials.map(({ label, href, icon: Icon }) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}><Icon size={16} /></a>)}</div>
         </div>
-        <div className="container footer-bottom"><span>© {new Date().getFullYear()} Great Media Enterprise</span><span className="mono">BUILT WITH INTENT</span><a href="#top" className="back-top">Back to top <ArrowRight size={15} /></a></div>
+        <div className="container footer-bottom"><span>© {new Date().getFullYear()} Great Media Enterprise</span><span className="mono">{EMAIL_ADDRESS}</span><a href="#top" className="back-top">Back to top <ArrowRight size={15} /></a></div>
       </footer>
     </div>
   );
