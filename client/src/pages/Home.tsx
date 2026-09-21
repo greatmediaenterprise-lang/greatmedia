@@ -11,15 +11,19 @@ import {
   FileSearch,
   Globe2,
   Instagram,
+  LayoutTemplate,
   Linkedin,
   Mail,
   Menu,
   MessageCircle,
   MousePointer2,
+  Palette,
   PenLine,
   Quote,
+  Radio,
   Sparkles,
   Twitter,
+  Video,
   X,
   Youtube,
 } from "lucide-react";
@@ -80,6 +84,42 @@ const services = [
     tags: ["Research", "Writing", "Clarity"],
     icon: FileSearch,
     accent: "cream",
+  },
+  {
+    number: "06",
+    title: "Website\nDesign",
+    description:
+      "Shape a digital home people want to explore. We design purposeful websites with clear structure, strong visuals, and a memorable point of view.",
+    tags: ["Wireframes", "UI Design", "Prototypes"],
+    icon: LayoutTemplate,
+    accent: "blue",
+  },
+  {
+    number: "07",
+    title: "Graphic\nDesign",
+    description:
+      "Build a visual identity people recognize. From brand systems to campaign artwork, we turn your ideas into confident, consistent visuals.",
+    tags: ["Branding", "Print", "Campaigns"],
+    icon: Palette,
+    accent: "purple",
+  },
+  {
+    number: "08",
+    title: "Video\nProduction",
+    description:
+      "Bring your story to life with video that holds attention—planned, produced, and edited for the platforms your audience already uses.",
+    tags: ["Adverts", "Events", "Editing"],
+    icon: Video,
+    accent: "orange",
+  },
+  {
+    number: "09",
+    title: "Broadcast / Live\nVideo Solutions",
+    description:
+      "Deliver live moments without the stress. We support streaming, broadcast setups, virtual events, and reliable live video experiences.",
+    tags: ["Streaming", "Live Events", "Broadcast"],
+    icon: Radio,
+    accent: "lime",
   },
 ];
 
@@ -145,7 +185,7 @@ export default function Home() {
       <div className="topline" />
       <header className="site-header">
         <a href="#top" className="brand" onClick={closeMenu} aria-label="Great Media Enterprise home">
-          <LogoMark />
+          <img className="header-logo-image" src="/manus-storage/GreatNewLogo_13d22c09.png" alt="Great Media Enterprise logo" />
           <span className="brand-name">Great Media <em>Enterprise</em></span>
         </a>
 
