@@ -204,7 +204,7 @@ export default function Home() {
       <main id="top">
         <section className="hero-section">
           <div className="hero-visual" aria-hidden="true">
-            <img src="/assets/gme-hero.png" alt="" />
+            <img src="/assets/gme-hero.webp" alt="" />
             <div className="hero-visual-tint" />
           </div>
           <div className="hero-grid" aria-hidden="true" />
@@ -290,7 +290,7 @@ export default function Home() {
         <section className="approach-section" id="approach">
           <div className="container approach-layout">
             <div className="approach-art">
-              <img src="/assets/gme-showcase.png" alt="Abstract collage of digital strategy and research elements" />
+              <img src="/assets/gme-showcase.webp" alt="Abstract collage of digital strategy and research elements" />
               <div className="art-label mono">GME / FIELD NOTES / 001</div>
               <div className="art-corner art-corner-tl" />
               <div className="art-corner art-corner-br" />
