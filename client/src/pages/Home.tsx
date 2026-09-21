@@ -299,7 +299,7 @@ export default function Home() {
             <p>No decks. No runaround. Just a direct line to the team that can help you move it forward.</p>
             <div className="contact-actions"><WhatsAppButton label="Chat on WhatsApp" className="contact-cta" /><span className="or-label mono">OR</span><a className="email-link" href={`mailto:${EMAIL_ADDRESS}`}><Mail size={16} /> Email us</a></div>
             <ContactForm />
-            <div className="contact-details"><span className="mono">WHATSAPP / +234 816 577 2892</span><span className="detail-separator" /><span className="mono">MON—FRI / 09:00—18:00 WAT</span></div>
+            <div className="contact-details"><span className="mono">WHATSAPP / +234 816 577 2892</span><span className="detail-separator" /><span className="mono">MON—FRI / 09:00—18:00 WAT</span><span className="detail-separator" /><a className="main-site-link mono" href="https://greatmediaenterprise.vercel.app/" target="_blank" rel="noreferrer">VISIT MAIN WEBSITE <ArrowUpRight size={12} /></a></div>
           </div>
         </section>
       </main>
