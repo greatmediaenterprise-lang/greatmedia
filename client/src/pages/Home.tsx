@@ -3,6 +3,7 @@ import {
   ArrowDownRight,
   ArrowRight,
   ArrowUpRight,
+  BarChart3,
   Bot,
   Check,
   ChevronDown,
@@ -10,20 +11,25 @@ import {
   Facebook,
   FileSearch,
   Globe2,
+  Headphones,
   Instagram,
   LayoutTemplate,
   Linkedin,
   Mail,
   Menu,
   MessageCircle,
+  MonitorCog,
   MousePointer2,
   Palette,
   PenLine,
   Quote,
   Radio,
+  Smartphone,
   Sparkles,
+  SlidersHorizontal,
   Twitter,
   Video,
+  Music2,
   X,
   Youtube,
 } from "lucide-react";
@@ -69,9 +75,9 @@ const services = [
   },
   {
     number: "04",
-    title: "Software\nWebsites",
+    title: "Software\nDevelopment",
     description:
-      "Product-grade web experiences for ambitious ideas—reliable, scalable, and built around the people who will actually use them.",
+      "Product-grade software for ambitious ideas—reliable, scalable, and built around the people who will actually use it.",
     tags: ["MVPs", "Platforms", "Systems"],
     icon: Code2,
     accent: "orange",
@@ -120,6 +126,60 @@ const services = [
     tags: ["Streaming", "Live Events", "Broadcast"],
     icon: Radio,
     accent: "lime",
+  },
+  {
+    number: "10",
+    title: "Mobile App\nDevelopment",
+    description:
+      "Build useful mobile experiences for Android and iOS with thoughtful interfaces, dependable performance, and a clear path from idea to launch.",
+    tags: ["Android", "iOS", "UX / UI"],
+    icon: Smartphone,
+    accent: "blue",
+  },
+  {
+    number: "11",
+    title: "Audio\nProduction",
+    description:
+      "Professional sound support from capture to final delivery—sound mixing, live audio, audio editing, speaker setup, and sound production.",
+    tags: ["Mixing", "Live Audio", "Editing"],
+    icon: Headphones,
+    accent: "purple",
+  },
+  {
+    number: "12",
+    title: "Music\nProduction",
+    description:
+      "Create, arrange, and finish music with FL Studio and Kontakt, plus support for selling musical plugins and building your sound library.",
+    tags: ["FL Studio", "Kontakt", "Plugins"],
+    icon: Music2,
+    accent: "orange",
+  },
+  {
+    number: "13",
+    title: "Live Sound\nMixing",
+    description:
+      "Mix live performances and events with practical workflows across FL Studio, Cubase, Studio One, and Audacity.",
+    tags: ["FL Studio", "Cubase", "Studio One"],
+    icon: SlidersHorizontal,
+    accent: "cream",
+  },
+  {
+    number: "14",
+    title: "Data\nAnalysis",
+    description:
+      "Turn information into decisions with analysis, reporting, and clear visual outputs using Excel, SPSS, EViews, AI, and Python.",
+    tags: ["Excel", "SPSS", "Python"],
+    icon: BarChart3,
+    accent: "lime",
+  },
+  {
+    number: "15",
+    title: "Computer\nServices",
+    description:
+      "Practical computer support for individuals, teams, and businesses using Microsoft applications and everyday digital workflows.",
+    tags: ["Microsoft", "Setup", "Support"],
+    icon: MonitorCog,
+    accent: "blue",
   },
 ];
 
@@ -243,7 +303,7 @@ export default function Home() {
             <p className="signal-lead">Good work gets noticed.<br /><strong>Great work gets remembered.</strong></p>
             <div className="signal-divider" />
             <div className="signal-metrics">
-              <div><strong>05</strong><span>core disciplines</span></div>
+              <div><strong>15</strong><span>service offerings</span></div>
               <div><strong>01</strong><span>connected partner</span></div>
               <div><strong>∞</strong><span>room to grow</span></div>
             </div>
