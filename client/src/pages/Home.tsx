@@ -417,6 +417,10 @@ export default function Home() {
                 <img src="/assets/mental-health-therapy-ai.png" alt="Mental Health Therapy AI and mental wellness support application" />
                 <figcaption><span className="mono">03 / GREAT THERAPY AI</span><a className="gallery-project-link" href="https://greattherapyai.vercel.app/" target="_blank" rel="noreferrer"><strong>Mental Health Therapy AI <ArrowUpRight size={14} /></strong></a><span>AI solutions · Mental wellness support</span></figcaption>
               </figure>
+              <figure className="gallery-feature gallery-video-feature">
+                <div className="gallery-video"><iframe src="https://www.youtube.com/embed/qQpsKHkzNY0" title="Chapel of Transformation School Chapel live broadcast at Federal University Oye-Ekiti" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
+                <figcaption><span className="mono">04 / CHAPEL OF TRANSFORMATION</span><a className="gallery-project-link" href="https://youtu.be/qQpsKHkzNY0" target="_blank" rel="noreferrer"><strong>Live Broadcast Solution <ArrowUpRight size={14} /></strong></a><span>Broadcast · Live streaming · School Chapel</span></figcaption>
+              </figure>
             </div>
           </div>
         </section>
