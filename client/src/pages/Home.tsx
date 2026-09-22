@@ -411,7 +411,11 @@ export default function Home() {
               </figure>
               <figure className="gallery-feature">
                 <img src="/assets/cego-print-ventures-website.png" alt="Cego Print Ventures business centre website developed by Great Media Enterprise" />
-                <figcaption><span className="mono">02 / CEGO PRINT VENTURES</span><strong>Business centre website</strong><span>Web development · SEO · Digital systems</span></figcaption>
+                <figcaption><span className="mono">02 / CEGO PRINT VENTURES</span><a className="gallery-project-link" href="https://cegoprintventures.vercel.app/" target="_blank" rel="noreferrer"><strong>Business centre website <ArrowUpRight size={14} /></strong></a><span>Web development · SEO · Digital systems</span></figcaption>
+              </figure>
+              <figure className="gallery-feature">
+                <img src="/assets/mental-health-therapy-ai.png" alt="Mental Health Therapy AI and mental wellness support application" />
+                <figcaption><span className="mono">03 / GREAT THERAPY AI</span><a className="gallery-project-link" href="https://greattherapyai.vercel.app/" target="_blank" rel="noreferrer"><strong>Mental Health Therapy AI <ArrowUpRight size={14} /></strong></a><span>AI solutions · Mental wellness support</span></figcaption>
               </figure>
             </div>
           </div>

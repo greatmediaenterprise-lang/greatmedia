@@ -179,6 +179,9 @@ a { color: inherit; text-decoration: none; }
 .gallery-feature figcaption { display: grid; grid-template-columns: 1.1fr 1fr .8fr; align-items: center; gap: 20px; padding: 18px 21px 20px; }
 .gallery-feature figcaption span { color: rgba(243,240,233,.52); font-size: 9px; }
 .gallery-feature figcaption strong { color: #d8ff45; font-size: 14px; font-weight: 600; }
+.gallery-project-link { display: inline-flex; width: fit-content; }
+.gallery-project-link strong { display: inline-flex; align-items: center; gap: 6px; transition: gap .18s var(--ease-out), color .18s ease; }
+.gallery-project-link:hover strong { gap: 10px; color: #f3f0e9; }
 .testimonials-section { background: #f3f0e9; color: #10130d; padding: 132px 0 145px; }
 .testimonials-heading { margin-bottom: 52px; }
 .testimonials-heading h2 { color: #10130d; }
