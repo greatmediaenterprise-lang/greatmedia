@@ -190,6 +190,22 @@ const steps = [
   ["03", "Make it move", "We launch with intention, learn from the response, and keep improving what matters."],
 ];
 
+const testimonials = [
+  { quote: "I want to say thank you for all you did for me during the period of writing my project. It is only God that will reward you. I really appreciate you.", name: "Sister Ejiro Fuoye", detail: "Project writing" },
+  { quote: "I had an A in my project. Thank you so much for the excellent work.", name: "Sister Promise Fuoye", detail: "Research support" },
+  { quote: "The work was corrected and I have submitted it. Great work—it was very good.", name: "Sister Annabel Fuoye", detail: "Project support" },
+  { quote: "My supervisor did not reject the analysis, and the work was done very well.", name: "Sister Vique", detail: "Data analysis" },
+  { quote: "Thank you for the work. Our supervisor collected it from UNILORIN and everything was well presented.", name: "Sister Motunrayo", detail: "Academic project" },
+  { quote: "Great Media Enterprise is a reliable company. They helped me from chapter one to five, and the work was very well presented. I got an A.", name: "Bro Justin Fuoye", detail: "Research writing" },
+  { quote: "Great Media Enterprise is very good in terms of research writing. Their service is careful, clear, and reliable.", name: "Pleasant Fuoye", detail: "Research writing" },
+  { quote: "They built my SEO, website, app, and software for Cego Print Ventures. The website is live on Google, and their prices and services are very good.", name: "Mr. Cletus", detail: "Website, app & software" },
+  { quote: "Great Media Enterprise is a very good company. I love their services, and I am also the accounting officer at Great Media Enterprise. They are a nice company to work with.", name: "Mr. Alao Temidayo", detail: "Team & client partner" },
+  { quote: "I had the opportunity to meet their CEO at FUOYE, Mr. Okoh Great, who is a great guy. He delivers very well, knows a lot, and I will recommend him and his company to the world.", name: "Mr. Tope Bankole", detail: "Client partner" },
+  { quote: "Mr. Great is a very good, trusted, and reliable person, and his company is very reliable.", name: "Dr. Osamoka", detail: "Chaplain, FUOYE" },
+  { quote: "Great was our best sound engineer and media person. I love his work and miss having him with us.", name: "Mr. Adeyemi", detail: "Technical Coordinator, FUOYE Chapel" },
+  { quote: "Great Media Enterprise is great in broadcast, live streaming, and sound. Mr. Great knows a lot about media from his work with Chapel of Transformation School Chapel at FUOYE.", name: "Israel", detail: "Broadcast & live streaming" },
+];
+
 function LogoMark() {
   return (
     <span className="logo-mark" aria-hidden="true">
@@ -334,6 +350,8 @@ export default function Home() {
               <div><strong>15</strong><span>service offerings</span></div>
               <div><strong>01</strong><span>connected partner</span></div>
               <div><strong>∞</strong><span>room to grow</span></div>
+              <div><strong>400+</strong><span>works completed</span></div>
+              <div><strong>30+</strong><span>clients reached</span></div>
             </div>
           </div>
         </section>
@@ -372,6 +390,22 @@ export default function Home() {
                 );
               })}
             </div>
+          </div>
+        </section>
+
+        <section className="gallery-section" id="gallery">
+          <div className="container">
+            <div className="section-heading gallery-heading">
+              <div>
+                <div className="section-kicker mono">/ SELECTED WORK</div>
+                <h2>Gallery of<br /><span>our work.</span></h2>
+              </div>
+              <p>A glimpse of the ideas, campaigns, and visual systems we create for organisations and people doing meaningful work.</p>
+            </div>
+            <figure className="gallery-feature">
+              <img src="/assets/fathers-day-chapel-transformation.webp" alt="Father’s Day graphic design collage created for Chapel of Transformation, Oye Campus" />
+              <figcaption><span className="mono">01 / CHAPEL OF TRANSFORMATION</span><strong>Father’s Day campaign graphics</strong><span>Graphic design · Campaign creative</span></figcaption>
+            </figure>
           </div>
         </section>
 
@@ -414,6 +448,27 @@ export default function Home() {
                 <div><Check size={16} /><span>Strategy that stays close to the outcome</span></div>
                 <div><Check size={16} /><span>Built for today. Ready for what’s next.</span></div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="testimonials-section" id="testimonials">
+          <div className="container">
+            <div className="section-heading testimonials-heading">
+              <div>
+                <div className="section-kicker mono">/ CLIENT WORDS</div>
+                <h2>Good work<br /><span>travels by word.</span></h2>
+              </div>
+              <p>Real feedback from clients, collaborators, and partners who have experienced the Great Media Enterprise way of working.</p>
+            </div>
+            <div className="testimonials-grid">
+              {testimonials.map((testimonial) => (
+                <article className="testimonial-card" key={testimonial.name}>
+                  <Quote size={20} className="testimonial-quote-icon" />
+                  <p>“{testimonial.quote}”</p>
+                  <div><strong>{testimonial.name}</strong><span>{testimonial.detail}</span></div>
+                </article>
+              ))}
             </div>
           </div>
         </section>
