@@ -190,6 +190,13 @@ const steps = [
   ["03", "Make it move", "We launch with intention, learn from the response, and keep improving what matters."],
 ];
 
+const faqs = [
+  { question: "How do I install the app?", answer: "Download the application, extract the downloaded ZIP file, open the extracted folder, and install the APK file on your Android phone. If you need help, contact our team and we will guide you through the process." },
+  { question: "How can I contact Great Media Enterprise?", answer: "You can chat with us directly on WhatsApp, send an email to greatmediaenterprise@gmail.com, or use the enquiry form in the Contact section. We respond to project, support, and service enquiries." },
+  { question: "What services do you offer?", answer: "We provide digital marketing, website design and development, software development, AI solutions, mobile app development, research writing, graphic design, video production, broadcast and live streaming, audio and music production, data analysis, and computer services." },
+  { question: "What time do your services run?", answer: "Great Media Enterprise is available Monday to Sunday, 24 hours each day. Send us a message whenever you are ready, and we will respond as soon as possible." },
+];
+
 const testimonials = [
   { quote: "I want to say thank you for all you did for me during the period of writing my project. It is only God that will reward you. I really appreciate you.", name: "Sister Ejiro Fuoye", detail: "Project writing" },
   { quote: "I had an A in my project. Thank you so much for the excellent work.", name: "Sister Promise Fuoye", detail: "Research support" },
@@ -292,6 +299,7 @@ export default function Home() {
           <a href="#approach" onClick={closeMenu}>Our approach</a>
           <a href="#gallery" onClick={closeMenu}>Gallery</a>
           <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
+          <a href="#faq" onClick={closeMenu}>FAQ</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
           <AppDownloadButton compact />
           <WhatsAppButton label="Let's talk" className="nav-cta" />
@@ -489,6 +497,26 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="faq-section" id="faq">
+          <div className="container">
+            <div className="section-heading faq-heading">
+              <div>
+                <div className="section-kicker mono">/ NEED TO KNOW</div>
+                <h2>Questions,<br /><span>answered.</span></h2>
+              </div>
+              <p>Find practical answers about installing the app, reaching our team, our services, and our always-open support hours.</p>
+            </div>
+            <div className="faq-list">
+              {faqs.map((faq, index) => (
+                <details className="faq-item" key={faq.question} open={index === 0}>
+                  <summary><span className="faq-number mono">0{index + 1}</span><strong>{faq.question}</strong><span className="faq-plus">+</span></summary>
+                  <p>{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="contact-section" id="contact">
           <div className="contact-orbit orbit-one" aria-hidden="true" />
           <div className="contact-orbit orbit-two" aria-hidden="true" />
@@ -498,7 +526,7 @@ export default function Home() {
             <p>No decks. No runaround. Just a direct line to the team that can help you move it forward.</p>
             <div className="contact-actions"><WhatsAppButton label="Chat on WhatsApp" className="contact-cta" /><span className="or-label mono">OR</span><a className="email-link" href={`mailto:${EMAIL_ADDRESS}`}><Mail size={16} /> Email us</a></div>
             <ContactForm />
-            <div className="contact-details"><span className="mono">WHATSAPP / +234 816 577 2892</span><span className="detail-separator" /><span className="mono">MON—FRI / 09:00—18:00 WAT</span><span className="detail-separator" /><a className="main-site-link mono" href="https://greatmediaenterprise.vercel.app/" target="_blank" rel="noreferrer">VISIT MAIN WEBSITE <ArrowUpRight size={12} /></a></div>
+            <div className="contact-details"><span className="mono">WHATSAPP / +234 816 577 2892</span><span className="detail-separator" /><a className="email-detail mono" href={`mailto:${EMAIL_ADDRESS}`}>EMAIL / {EMAIL_ADDRESS}</a><span className="detail-separator" /><span className="mono">MON—SUN / 24 HOURS</span><span className="detail-separator" /><a className="main-site-link mono" href="https://greatmediaenterprise.vercel.app/" target="_blank" rel="noreferrer">VISIT MAIN WEBSITE <ArrowUpRight size={12} /></a></div>
           </div>
         </section>
       </main>
