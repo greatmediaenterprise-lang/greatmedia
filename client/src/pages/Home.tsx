@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import {
   ArrowDownRight,
   ArrowRight,
@@ -284,6 +284,27 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
+
+  useEffect(() => {
+    const scrollToHash = (behavior: ScrollBehavior) => {
+      const hash = window.location.hash;
+      if (!hash) return;
+
+      const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+      if (!target) return;
+
+      target.scrollIntoView({ behavior, block: "start" });
+    };
+
+    const handleHashChange = () => scrollToHash("smooth");
+    const initialScroll = window.setTimeout(() => scrollToHash("auto"), 0);
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => {
+      window.clearTimeout(initialScroll);
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
 
   return (
     <div className="site-shell">
