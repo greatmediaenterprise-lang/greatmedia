@@ -36,6 +36,7 @@ import {
 
 const WHATSAPP_URL = "https://wa.me/2348165772892";
 const EMAIL_ADDRESS = "greatmediaenterprise@gmail.com";
+const APP_DOWNLOAD_URL = "https://drive.google.com/file/d/1MFqwRMMl4lXJ5OMIpYTbyFe3kFNyS0-U/view?usp=drive_link";
 
 const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/company/146283095/", icon: Linkedin },
@@ -209,6 +210,27 @@ function WhatsAppButton({ label = "Start a conversation", className = "" }: { la
   );
 }
 
+function GoogleDriveIcon() {
+  return (
+    <svg className="drive-icon" viewBox="0 0 48 42" aria-hidden="true">
+      <path fill="#0F9D58" d="M16.2 0h10.1l16.1 28H32.2z" />
+      <path fill="#F4B400" d="M16.2 0 0 28h10.1L26.3 0z" />
+      <path fill="#4285F4" d="M0 28h32.2l-5.8 10H5.8z" />
+      <path fill="#34A853" d="M32.2 28h10.2l-5.8 10H26.4z" />
+    </svg>
+  );
+}
+
+function AppDownloadButton({ compact = false }: { compact?: boolean }) {
+  return (
+    <a className={`app-download ${compact ? "app-download-compact" : ""}`} href={APP_DOWNLOAD_URL} target="_blank" rel="noreferrer">
+      <GoogleDriveIcon />
+      <span>{compact ? "Download app" : "Download our app"}</span>
+      <ArrowUpRight size={15} />
+    </a>
+  );
+}
+
 function ContactForm() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -228,7 +250,7 @@ function ContactForm() {
         <label><span>Name</span><input name="name" type="text" placeholder="Your name" required /></label>
         <label><span>Email</span><input name="email" type="email" placeholder="you@company.com" required /></label>
       </div>
-      <label><span>What can we help with?</span><select name="service" defaultValue=""><option value="" disabled>Select a service</option><option>Digital Marketing</option><option>Web Development</option><option>AI Solutions</option><option>Software Websites</option><option>Project Writing & Research</option><option>Something else</option></select></label>
+      <label><span>What can we help with?</span><select name="service" defaultValue=""><option value="" disabled>Select a service</option><option>Digital Marketing</option><option>Web Development</option><option>AI Solutions</option><option>Software Development</option><option>Project Writing & Research</option><option>Something else</option></select></label>
       <label><span>Tell us a little about it</span><textarea name="message" placeholder="What are you building, and where are you right now?" rows={4} required /></label>
       <div className="form-submit-row"><button className="form-submit" type="submit"><Mail size={16} /> Send enquiry <ArrowUpRight size={16} /></button><span className="form-note">Opens your email app to send to {EMAIL_ADDRESS}</span></div>
     </form>
@@ -253,6 +275,7 @@ export default function Home() {
           <a href="#services" onClick={closeMenu}>What we do</a>
           <a href="#approach" onClick={closeMenu}>Our approach</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
+          <AppDownloadButton compact />
           <WhatsAppButton label="Let's talk" className="nav-cta" />
         </nav>
 
@@ -288,7 +311,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-bottom reveal-up delay-3">
-              <WhatsAppButton label="Tell us what you’re building" />
+              <div className="hero-actions"><WhatsAppButton label="Tell us what you’re building" /><AppDownloadButton /></div>
               <div className="hero-note">
                 <span className="mono">AVAILABLE FOR SELECT PROJECTS</span>
                 <span className="availability-dot" />
