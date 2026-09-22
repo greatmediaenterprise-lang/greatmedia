@@ -195,15 +195,15 @@ const testimonials = [
   { quote: "I had an A in my project. Thank you so much for the excellent work.", name: "Sister Promise Fuoye", detail: "Research support" },
   { quote: "The work was corrected and I have submitted it. Great work—it was very good.", name: "Sister Annabel Fuoye", detail: "Project support" },
   { quote: "My supervisor did not reject the analysis, and the work was done very well.", name: "Sister Vique", detail: "Data analysis" },
-  { quote: "Thank you for the work. Our supervisor collected it from UNILORIN and everything was well presented.", name: "Sister Motunrayo", detail: "Academic project" },
+  { quote: "Thank you for the work. Our supervisor collected it from the University of Ilorin and everything was well presented.", name: "Sister Motunrayo", detail: "Academic project · University of Ilorin" },
   { quote: "Great Media Enterprise is a reliable company. They helped me from chapter one to five, and the work was very well presented. I got an A.", name: "Bro Justin Fuoye", detail: "Research writing" },
   { quote: "Great Media Enterprise is very good in terms of research writing. Their service is careful, clear, and reliable.", name: "Pleasant Fuoye", detail: "Research writing" },
   { quote: "They built my SEO, website, app, and software for Cego Print Ventures. The website is live on Google, and their prices and services are very good.", name: "Mr. Cletus", detail: "Website, app & software" },
   { quote: "Great Media Enterprise is a very good company. I love their services, and I am also the accounting officer at Great Media Enterprise. They are a nice company to work with.", name: "Mr. Alao Temidayo", detail: "Team & client partner" },
-  { quote: "I had the opportunity to meet their CEO at FUOYE, Mr. Okoh Great, who is a great guy. He delivers very well, knows a lot, and I will recommend him and his company to the world.", name: "Mr. Tope Bankole", detail: "Client partner" },
-  { quote: "Mr. Great is a very good, trusted, and reliable person, and his company is very reliable.", name: "Dr. Osamoka", detail: "Chaplain, FUOYE" },
-  { quote: "Great was our best sound engineer and media person. I love his work and miss having him with us.", name: "Mr. Adeyemi", detail: "Technical Coordinator, FUOYE Chapel" },
-  { quote: "Great Media Enterprise is great in broadcast, live streaming, and sound. Mr. Great knows a lot about media from his work with Chapel of Transformation School Chapel at FUOYE.", name: "Israel", detail: "Broadcast & live streaming" },
+  { quote: "I had the opportunity to meet their CEO at Federal University Oye-Ekiti, Mr. Okoh Great, who is a great guy. He delivers very well, knows a lot, and I will recommend him and his company to the world.", name: "Mr. Tope Bankole", detail: "Client partner · Federal University Oye-Ekiti" },
+  { quote: "Mr. Great is a very good, trusted, and reliable person, and his company is very reliable.", name: "Dr. Osamoka", detail: "Chaplain · Federal University Oye-Ekiti" },
+  { quote: "Great was our best sound engineer and media person. I love his work and miss having him with us.", name: "Mr. Adeyemi", detail: "Technical Coordinator · Federal University Oye-Ekiti Chapel" },
+  { quote: "Great Media Enterprise is great in broadcast, live streaming, and sound. Mr. Great knows a lot about media from his work with Chapel of Transformation School Chapel at Federal University Oye-Ekiti.", name: "Israel", detail: "Broadcast & live streaming" },
 ];
 
 function LogoMark() {
@@ -290,6 +290,8 @@ export default function Home() {
         <nav className={`main-nav ${menuOpen ? "is-open" : ""}`} aria-label="Main navigation">
           <a href="#services" onClick={closeMenu}>What we do</a>
           <a href="#approach" onClick={closeMenu}>Our approach</a>
+          <a href="#gallery" onClick={closeMenu}>Gallery</a>
+          <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
           <AppDownloadButton compact />
           <WhatsAppButton label="Let's talk" className="nav-cta" />
@@ -402,10 +404,16 @@ export default function Home() {
               </div>
               <p>A glimpse of the ideas, campaigns, and visual systems we create for organisations and people doing meaningful work.</p>
             </div>
-            <figure className="gallery-feature">
-              <img src="/assets/fathers-day-chapel-transformation.webp" alt="Father’s Day graphic design collage created for Chapel of Transformation, Oye Campus" />
-              <figcaption><span className="mono">01 / CHAPEL OF TRANSFORMATION</span><strong>Father’s Day campaign graphics</strong><span>Graphic design · Campaign creative</span></figcaption>
-            </figure>
+            <div className="gallery-grid">
+              <figure className="gallery-feature">
+                <img src="/assets/fathers-day-chapel-transformation.webp" alt="Father’s Sunday Service flyer collage created for Chapel of Transformation, Oye Campus" />
+                <figcaption><span className="mono">01 / CHAPEL OF TRANSFORMATION</span><strong>Father’s Sunday Service Flyer</strong><span>Graphic design · Church media</span></figcaption>
+              </figure>
+              <figure className="gallery-feature">
+                <img src="/assets/cego-print-ventures-website.png" alt="Cego Print Ventures business centre website developed by Great Media Enterprise" />
+                <figcaption><span className="mono">02 / CEGO PRINT VENTURES</span><strong>Business centre website</strong><span>Web development · SEO · Digital systems</span></figcaption>
+              </figure>
+            </div>
           </div>
         </section>
 
@@ -457,7 +465,7 @@ export default function Home() {
             <div className="section-heading testimonials-heading">
               <div>
                 <div className="section-kicker mono">/ CLIENT WORDS</div>
-                <h2>Good work<br /><span>travels by word.</span></h2>
+                <h2>Testimonials</h2>
               </div>
               <p>Real feedback from clients, collaborators, and partners who have experienced the Great Media Enterprise way of working.</p>
             </div>
