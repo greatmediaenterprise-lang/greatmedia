@@ -288,6 +288,11 @@ export default function Home() {
         <section className="hero-section">
           <div className="hero-visual" aria-hidden="true">
             <img src="/assets/gme-hero.webp" alt="" />
+            <div className="motion-orbit motion-orbit-one" />
+            <div className="motion-orbit motion-orbit-two" />
+            <div className="motion-ribbon motion-ribbon-one" />
+            <div className="motion-ribbon motion-ribbon-two" />
+            <div className="motion-particles motion-particles-one" />
             <div className="hero-visual-tint" />
           </div>
           <div className="hero-grid" aria-hidden="true" />

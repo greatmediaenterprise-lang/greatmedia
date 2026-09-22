@@ -97,6 +97,16 @@ a { color: inherit; text-decoration: none; }
 .hero-section { position: relative; min-height: 710px; display: flex; align-items: stretch; border-bottom: 1px solid rgba(243,240,233,.12); background: #10151a; }
 .hero-visual { position: absolute; inset: 0; overflow: hidden; }
 .hero-visual img { width: 100%; height: 100%; object-fit: cover; object-position: 58% center; opacity: .53; filter: saturate(.92) contrast(1.08); }
+.motion-orbit, .motion-ribbon, .motion-particles { position: absolute; pointer-events: none; }
+.motion-orbit { right: -4%; top: 9%; width: min(52vw, 720px); aspect-ratio: 1; border: 1px solid rgba(216,255,69,.16); border-radius: 50%; opacity: .8; transform: rotate(-18deg); animation: orbit-drift 16s ease-in-out infinite alternate; }
+.motion-orbit::before, .motion-orbit::after { content: ""; position: absolute; inset: 8%; border: 1px solid rgba(69,133,255,.18); border-radius: 50%; transform: rotate(52deg) scaleX(.42); }
+.motion-orbit::after { inset: 21%; border-color: rgba(216,255,69,.22); transform: rotate(-36deg) scaleX(.58); }
+.motion-orbit-two { right: 9%; top: 26%; width: min(30vw, 390px); opacity: .46; border-color: rgba(69,133,255,.28); animation-duration: 11s; animation-direction: alternate-reverse; }
+.motion-ribbon { right: -10%; top: 44%; width: 86%; height: 120px; border-top: 1px solid rgba(216,255,69,.34); border-radius: 50%; filter: blur(.2px); transform: rotate(-18deg) skewX(-20deg); opacity: .68; animation: ribbon-sweep 9s ease-in-out infinite alternate; }
+.motion-ribbon::after { content: ""; position: absolute; inset: -18px 4% auto; height: 50px; border-top: 1px solid rgba(69,133,255,.28); border-radius: 50%; }
+.motion-ribbon-two { top: 61%; right: -18%; opacity: .34; transform: rotate(-13deg) skewX(-15deg); animation-duration: 12s; animation-direction: alternate-reverse; }
+.motion-particles { right: 13%; top: 30%; width: 3px; height: 3px; border-radius: 50%; background: #d8ff45; box-shadow: 58px 46px 0 rgba(216,255,69,.7), 118px -24px 0 rgba(69,133,255,.8), 170px 102px 0 rgba(216,255,69,.42), -36px 126px 0 rgba(69,133,255,.6), 230px 18px 0 rgba(243,240,233,.45), 84px 170px 0 rgba(216,255,69,.52); opacity: .8; animation: particle-float 7s ease-in-out infinite alternate; }
+.motion-particles-one::before { content: ""; position: absolute; width: 170px; height: 170px; left: -70px; top: 20px; border: 1px solid rgba(216,255,69,.13); border-radius: 50%; animation: particle-pulse 5s ease-in-out infinite alternate; }
 .hero-visual-tint { position: absolute; inset: 0; background: linear-gradient(90deg, #10151a 0%, rgba(16,21,26,.92) 26%, rgba(16,21,26,.45) 60%, rgba(16,21,26,.12) 100%), linear-gradient(180deg, rgba(11,13,16,.4) 0%, transparent 28%, rgba(11,13,16,.54) 100%); }
 .hero-grid { position: absolute; inset: 0; opacity: .2; background-image: linear-gradient(rgba(216,255,69,.13) 1px, transparent 1px), linear-gradient(90deg, rgba(216,255,69,.13) 1px, transparent 1px); background-size: 86px 86px; mask-image: linear-gradient(90deg, #000 0%, rgba(0,0,0,.55) 58%, transparent 95%); }
 .hero-content { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; padding-top: 126px; padding-bottom: 73px; }
@@ -238,6 +248,10 @@ a { color: inherit; text-decoration: none; }
 .delay-2 { animation-delay: 150ms; }
 .delay-3 { animation-delay: 220ms; }
 @keyframes reveal-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes orbit-drift { from { transform: rotate(-18deg) translate3d(-10px, 8px, 0) scale(.98); } to { transform: rotate(-12deg) translate3d(14px, -12px, 0) scale(1.03); } }
+@keyframes ribbon-sweep { from { transform: rotate(-18deg) skewX(-20deg) translate3d(-18px, 6px, 0); opacity: .35; } to { transform: rotate(-14deg) skewX(-20deg) translate3d(20px, -8px, 0); opacity: .78; } }
+@keyframes particle-float { from { transform: translate3d(-8px, 12px, 0); opacity: .42; } to { transform: translate3d(12px, -18px, 0); opacity: .9; } }
+@keyframes particle-pulse { from { transform: scale(.88); opacity: .25; } to { transform: scale(1.08); opacity: .7; } }
 
 @media (min-width: 640px) { .container { padding-left: 2rem; padding-right: 2rem; } }
 @media (min-width: 1024px) { .container { max-width: 1280px; padding-left: 2.5rem; padding-right: 2.5rem; } }
