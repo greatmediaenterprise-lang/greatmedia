@@ -37,6 +37,9 @@ import {
 const WHATSAPP_URL = "https://wa.me/2348165772892";
 const EMAIL_ADDRESS = "greatmediaenterprise@gmail.com";
 const APP_DOWNLOAD_URL = "https://drive.google.com/file/d/1MFqwRMMl4lXJ5OMIpYTbyFe3kFNyS0-U/view?usp=drive_link";
+const LINKEDIN_POST_URL = "https://www.linkedin.com/feed/update/urn:li:activity:7508554937757528064";
+const LINKEDIN_EMBED_URL = "https://www.linkedin.com/embed/feed/update/urn:li:activity:7508554937757528064";
+const LINKEDIN_COMPANY_URL = "https://www.linkedin.com/company/greatmediaenterprise/";
 
 const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/company/146283095/", icon: Linkedin },
@@ -319,6 +322,7 @@ export default function Home() {
           <a href="#services" onClick={closeMenu}>What we do</a>
           <a href="#approach" onClick={closeMenu}>Our approach</a>
           <a href="#gallery" onClick={closeMenu}>Gallery</a>
+          <a href="#post" onClick={closeMenu}>Post</a>
           <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
           <a href="#faq" onClick={closeMenu}>FAQ</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
@@ -450,6 +454,32 @@ export default function Home() {
                 <div className="gallery-video"><iframe src="https://www.youtube.com/embed/qQpsKHkzNY0" title="Chapel of Transformation School Chapel live broadcast at Federal University Oye-Ekiti" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
                 <figcaption><span className="mono">04 / CHAPEL OF TRANSFORMATION</span><a className="gallery-project-link" href="https://youtu.be/qQpsKHkzNY0" target="_blank" rel="noreferrer"><strong>Live Broadcast Solution <ArrowUpRight size={14} /></strong></a><span>Broadcast · Live streaming · School Chapel</span></figcaption>
               </figure>
+            </div>
+          </div>
+        </section>
+
+        <section className="linkedin-post-section" id="post">
+          <div className="container">
+            <div className="section-heading linkedin-post-heading">
+              <div>
+                <div className="section-kicker mono">/ FROM THE COMPANY PAGE</div>
+                <h2>Our latest<br /><span>LinkedIn post.</span></h2>
+              </div>
+              <p>Follow Great Media Enterprise for company updates, new work, insights, and announcements.</p>
+            </div>
+            <div className="linkedin-post-layout">
+              <div className="linkedin-post-frame">
+                <iframe src={LINKEDIN_EMBED_URL} title="Great Media Enterprise LinkedIn post" loading="eager" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
+              </div>
+              <div className="linkedin-post-side">
+                <div className="linkedin-badge"><Linkedin size={20} /><span className="mono">GREAT MEDIA ENTERPRISE</span></div>
+                <h3>Stay close to the work.</h3>
+                <p>See the post on LinkedIn, then visit our company page to follow every new update.</p>
+                <div className="linkedin-actions">
+                  <a className="linkedin-primary" href={LINKEDIN_COMPANY_URL} target="_blank" rel="noreferrer">Visit company page <ArrowUpRight size={16} /></a>
+                  <a className="linkedin-secondary" href={LINKEDIN_POST_URL} target="_blank" rel="noreferrer">Open this post <ArrowUpRight size={15} /></a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
