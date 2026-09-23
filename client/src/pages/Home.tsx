@@ -453,6 +453,10 @@ export default function Home() {
                 <div className="gallery-video"><iframe src="https://www.youtube.com/embed/qQpsKHkzNY0" title="Chapel of Transformation School Chapel live broadcast at Federal University Oye-Ekiti" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
                 <figcaption><span className="mono">04 / CHAPEL OF TRANSFORMATION</span><a className="gallery-project-link" href="https://youtu.be/qQpsKHkzNY0" target="_blank" rel="noreferrer"><strong>Live Broadcast Solution <ArrowUpRight size={14} /></strong></a><span>Broadcast · Live streaming · School Chapel</span></figcaption>
               </figure>
+              <figure className="gallery-feature gallery-video-feature">
+                <div className="gallery-video"><iframe src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent("https://web.facebook.com/share/v/1CUiG5HSj5/")}&show_text=false&width=560`} title="Chapel of Transformation Welcome Service for the Vice Chancellor at Federal University Oye-Ekiti" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen /></div>
+                <figcaption><span className="mono">05 / CHAPEL OF TRANSFORMATION</span><a className="gallery-project-link" href="https://web.facebook.com/share/v/1CUiG5HSj5/" target="_blank" rel="noreferrer"><strong>Vice Chancellor Welcome Service <ArrowUpRight size={14} /></strong></a><span>Broadcast · Facebook video · Welcome service</span></figcaption>
+              </figure>
             </div>
           </div>
         </section>
