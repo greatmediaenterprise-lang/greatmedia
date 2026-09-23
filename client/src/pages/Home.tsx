@@ -213,6 +213,21 @@ const testimonials = [
   { quote: "Mr. Great is a very good, trusted, and reliable person, and his company is very reliable.", name: "Dr. Osamoka", detail: "Chaplain · Federal University Oye-Ekiti" },
   { quote: "Great was our best sound engineer and media person. I love his work and miss having him with us.", name: "Mr. Adeyemi", detail: "Technical Coordinator · Federal University Oye-Ekiti Chapel" },
   { quote: "Great Media Enterprise is great in broadcast, live streaming, and sound. Mr. Great knows a lot about media from his work with Chapel of Transformation School Chapel at Federal University Oye-Ekiti.", name: "Israel", detail: "Broadcast & live streaming" },
+  { quote: "It was a pleasure meeting Great. He was the Office Technology Management Department Class Representative and a very wonderful student.", name: "Dr. Udemba", detail: "Lecturer · Federal University Oye-Ekiti" },
+  { quote: "The project, data analysis, and seminar support were handled with care and clarity. The work was well presented and helped make the process easier.", name: "Rhemy", detail: "Project & data analysis · Federal University Oye-Ekiti" },
+  { quote: "Great Media Enterprise delivered a marvellous project and data analysis service. The work was clear, organised, and very helpful.", name: "Pelumi & Christopher", detail: "Project & data analysis" },
+  { quote: "The project and seminar report support was thorough, professional, and presented in a way that made the work easy to understand.", name: "Taiwo", detail: "Project & seminar report" },
+  { quote: "The seminar report was well researched and carefully prepared. Thank you for making the work much less stressful.", name: "Chidima", detail: "Seminar report" },
+  { quote: "My project was handled professionally from start to finish, with clear communication and useful corrections along the way.", name: "Adewumi", detail: "Project support" },
+  { quote: "The project support and data analysis were excellent. Great Media Enterprise helped me understand the work and present it with confidence.", name: "Seun & Favour", detail: "Project & data analysis" },
+  { quote: "The project data analysis support was very helpful and well explained. I appreciate the care put into the work.", name: "Moses", detail: "Project & data analysis" },
+  { quote: "The project and data analysis support was reliable, detailed, and well presented. I am grateful for the guidance throughout the process.", name: "Gem", detail: "Project & data analysis" },
+  { quote: "Great Media Enterprise provided strong support with my Federal University Oye-Ekiti project and data analysis. The work was handled very well.", name: "Tony", detail: "Project & data analysis · Federal University Oye-Ekiti" },
+  { quote: "They helped with my law project, and my supervisor was impressed with the quality and presentation of the work.", name: "Sister Gem", detail: "Law project support" },
+  { quote: "The business education analysis and project support were excellent, and I achieved a good grade. Thank you for the professional service.", name: "Tawab", detail: "Business Education analysis & project" },
+  { quote: "The geophysics seminar and project support was clear, organised, and professionally presented.", name: "Kenya", detail: "Geophysics seminar & project" },
+  { quote: "My accounting project was well supported, and I achieved a good grade. I truly appreciate the guidance and attention to detail.", name: "Shalom", detail: "Accounting project · Federal University Oye-Ekiti" },
+  { quote: "The guidance and counselling project support reduced my stress and helped me achieve a good grade. Thank you for the excellent help.", name: "Oluwafeyisikemi", detail: "Guidance & Counselling · Federal University Oye-Ekiti" },
 ];
 
 function LogoMark() {
