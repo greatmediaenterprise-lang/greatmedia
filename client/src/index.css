@@ -181,6 +181,8 @@ section[id] { scroll-margin-top: 24px; }
 .gallery-video { aspect-ratio: 16 / 9; background: #0b0d10; }
 .gallery-video iframe { display: block; width: 100%; height: 100%; border: 0; }
 .facebook-broadcast-card { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; color: #fff; background: radial-gradient(circle at 75% 28%, rgba(29,126,242,.85), transparent 26%), linear-gradient(135deg, #071b38 0%, #0a66c2 52%, #11151a 100%); }
+.facebook-broadcast-card > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .6s var(--ease-out), filter .3s ease; }
+.facebook-broadcast-card:hover > img { transform: scale(1.04); filter: brightness(.82) saturate(1.08); }
 .facebook-broadcast-card::before, .facebook-broadcast-card::after { content: ""; position: absolute; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; }
 .facebook-broadcast-card::before { width: 260px; height: 260px; right: -65px; top: -75px; }
 .facebook-broadcast-card::after { width: 180px; height: 180px; right: 35px; bottom: -100px; }

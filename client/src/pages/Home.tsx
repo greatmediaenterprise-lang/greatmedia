@@ -455,6 +455,7 @@ export default function Home() {
               </figure>
               <figure className="gallery-feature gallery-video-feature">
                 <a className="facebook-broadcast-card" href="https://web.facebook.com/share/v/1CUiG5HSj5/" target="_blank" rel="noreferrer" aria-label="Open Chapel of Transformation Vice Chancellor Welcome Service on Facebook">
+                  <img src="/assets/vice-chancellor-welcome-service.png" alt="Chapel of Transformation Vice Chancellor Welcome Service" />
                   <div className="facebook-broadcast-overlay" />
                   <div className="facebook-broadcast-content"><Facebook size={38} /><span className="mono">FACEBOOK VIDEO</span><strong>Vice Chancellor<br />Welcome Service</strong><span>Open video on Facebook <ArrowUpRight size={15} /></span></div>
                 </a>
