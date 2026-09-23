@@ -38,7 +38,6 @@ const WHATSAPP_URL = "https://wa.me/2348165772892";
 const EMAIL_ADDRESS = "greatmediaenterprise@gmail.com";
 const APP_DOWNLOAD_URL = "https://drive.google.com/file/d/1MFqwRMMl4lXJ5OMIpYTbyFe3kFNyS0-U/view?usp=drive_link";
 const LINKEDIN_POST_URL = "https://www.linkedin.com/feed/update/urn:li:activity:7508554937757528064";
-const LINKEDIN_EMBED_URL = "https://www.linkedin.com/embed/feed/update/urn:li:activity:7508554937757528064";
 const LINKEDIN_COMPANY_URL = "https://www.linkedin.com/company/greatmediaenterprise/";
 
 const socials = [
@@ -469,7 +468,13 @@ export default function Home() {
             </div>
             <div className="linkedin-post-layout">
               <div className="linkedin-post-frame">
-                <iframe src={LINKEDIN_EMBED_URL} title="Great Media Enterprise LinkedIn post" loading="eager" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
+                <article className="linkedin-post-card">
+                  <div className="linkedin-post-card-top"><div className="linkedin-avatar"><img src="/assets/great-media-logo.png" alt="" /></div><div><strong>Great Media Enterprise</strong><span>Great Media Checker · LinkedIn</span></div><Linkedin size={21} /></div>
+                  <p className="linkedin-post-copy">Great Media Checker is live and currently running! We are proud to have reached an important milestone with our academic integrity platform designed to support students, researchers, lecturers, institutions, and organizations with plagiarism and AI-content checking.</p>
+                  <p className="linkedin-post-copy">The platform is already operational, and we are actively improving and expanding its capabilities to make it more powerful, reliable, accessible, and competitive. This is only the beginning.</p>
+                  <div className="linkedin-post-tags">#GreatMediaChecker&nbsp;&nbsp; #GreatMediaEnterprise&nbsp;&nbsp; #AI&nbsp;&nbsp; #Innovation&nbsp;&nbsp; #MadeInNigeria</div>
+                  <a className="linkedin-read-link" href={LINKEDIN_POST_URL} target="_blank" rel="noreferrer">Read the full post on LinkedIn <ArrowUpRight size={15} /></a>
+                </article>
               </div>
               <div className="linkedin-post-side">
                 <div className="linkedin-badge"><Linkedin size={20} /><span className="mono">GREAT MEDIA ENTERPRISE</span></div>

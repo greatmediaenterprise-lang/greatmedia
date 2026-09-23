@@ -194,7 +194,18 @@ section[id] { scroll-margin-top: 24px; }
 .linkedin-post-heading > p { color: rgba(16,19,13,.68); }
 .linkedin-post-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(260px, .85fr); gap: 28px; align-items: stretch; }
 .linkedin-post-frame { min-height: 460px; overflow: hidden; background: #f3f0e9; border: 1px solid rgba(16,19,13,.18); box-shadow: 12px 12px 0 rgba(16,19,13,.1); }
-.linkedin-post-frame iframe { display: block; width: 100%; height: 460px; border: 0; background: #fff; }
+.linkedin-post-card { min-height: 460px; padding: 30px 32px; background: #fff; color: #17202a; }
+.linkedin-post-card-top { display: flex; align-items: center; gap: 12px; padding-bottom: 22px; border-bottom: 1px solid #e3e7e9; }
+.linkedin-post-card-top > svg { margin-left: auto; color: #0a66c2; fill: #0a66c2; }
+.linkedin-avatar { width: 47px; height: 47px; overflow: hidden; border-radius: 8px; background: #f3f0e9; }
+.linkedin-avatar img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.linkedin-post-card-top div:nth-child(2) { display: flex; flex-direction: column; gap: 4px; }
+.linkedin-post-card-top strong { font-size: 14px; }
+.linkedin-post-card-top span { color: #66727b; font-size: 11px; }
+.linkedin-post-copy { max-width: 650px; margin: 22px 0 0; color: #34424b; font-size: 15px; line-height: 1.55; }
+.linkedin-post-tags { margin-top: 23px; color: #0a66c2; font-size: 12px; line-height: 1.7; }
+.linkedin-read-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; color: #0a66c2; font-size: 12px; font-weight: 700; border-bottom: 1px solid rgba(10,102,194,.35); padding-bottom: 6px; }
+.linkedin-read-link:hover { gap: 12px; }
 .linkedin-post-side { display: flex; flex-direction: column; justify-content: center; padding: 35px; background: #10130d; color: #f3f0e9; }
 .linkedin-badge { display: inline-flex; align-items: center; gap: 10px; color: #d8ff45; margin-bottom: 30px; }
 .linkedin-badge svg { fill: currentColor; }
@@ -372,7 +383,7 @@ section[id] { scroll-margin-top: 24px; }
   .contact-section { padding: 99px 0 91px; }
   .gallery-feature figcaption { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
   .linkedin-post-section { padding: 90px 0; }
-  .linkedin-post-frame, .linkedin-post-frame iframe { height: 430px; min-height: 430px; }
+  .linkedin-post-frame, .linkedin-post-card { min-height: 430px; }
   .linkedin-post-side { padding: 28px 22px; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .faq-item summary { grid-template-columns: 36px 1fr 20px; gap: 10px; padding: 19px 0; }
