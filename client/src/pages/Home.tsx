@@ -501,7 +501,7 @@ export default function Home() {
                 </article>
                 <article className="linkedin-post-card linkedin-post-card-uiux">
                   <div className="linkedin-post-card-top"><div className="linkedin-avatar"><img src="/assets/great-media-logo.png" alt="" /></div><div><strong>Great Media Enterprise</strong><span>UI/UX Design · Figma Make</span></div><Linkedin size={21} /></div>
-                  <a className="linkedin-uiux-image-link" href="https://lnkd.in/e-xR-n-6" target="_blank" rel="noreferrer"><img src="/manus-storage/ui-ux-figma-make-demo_6b3a0bb4.png" alt="Great Media Enterprise UI/UX interface demo created with Figma Make" /></a>
+                  <a className="linkedin-uiux-image-link" href="https://lnkd.in/e-xR-n-6" target="_blank" rel="noreferrer"><img src="/assets/ui-ux-figma-make-demo.png" alt="Great Media Enterprise UI/UX interface demo created with Figma Make" /></a>
                   <p className="linkedin-post-copy">We’ve completed a UI/UX interface using Figma Make. Need a professional, modern interface for your website, mobile app, or software? Great Media Enterprise can help you turn your ideas into clean, user-friendly UI/UX designs before development.</p>
                   <div className="linkedin-post-services">Website UI/UX · Mobile App UI/UX · Software Dashboard Design · Modern & User-Friendly Interfaces</div>
                   <a className="linkedin-read-link" href="https://lnkd.in/e-xR-n-6" target="_blank" rel="noreferrer">Check out the UI/UX demo <ArrowUpRight size={15} /></a>
