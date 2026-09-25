@@ -506,6 +506,17 @@ export default function Home() {
                   <div className="linkedin-post-services">Website UI/UX · Mobile App UI/UX · Software Dashboard Design · Modern & User-Friendly Interfaces</div>
                   <a className="linkedin-read-link" href="https://lnkd.in/e-xR-n-6" target="_blank" rel="noreferrer">Check out the UI/UX demo <ArrowUpRight size={15} /></a>
                 </article>
+                <article className="linkedin-post-card linkedin-post-card-uiux">
+                  <div className="linkedin-post-card-top"><div className="linkedin-avatar"><img src="/assets/great-media-logo.png" alt="" /></div><div><strong>Great Media Enterprise</strong><span>Web Development · 2026 Tech Stack</span></div><Linkedin size={21} /></div>
+                  <a className="linkedin-uiux-image-link" href={LINKEDIN_COMPANY_URL} target="_blank" rel="noreferrer"><img src="/assets/web-dev-plain-js-typescript-vite.jpg" alt="Plain JavaScript compared with TypeScript, Vite, React, and Tailwind CSS for modern web development" /></a>
+                  <p className="linkedin-post-copy"><strong>The Evolution of Web Dev: Plain JS vs. TypeScript + Vite</strong></p>
+                  <p className="linkedin-post-copy">The web development world moves fast, but there’s a place for both the traditional way and the modern stack.</p>
+                  <p className="linkedin-post-copy"><strong>Plain JavaScript — the foundation:</strong> Zero setup, quick and lightweight, perfect for learning, small projects, and quick scripts. It is the core language of the web, and everything else builds on top of it.</p>
+                  <p className="linkedin-post-copy"><strong>TypeScript + Vite — the modern standard:</strong> Vite brings an instant development server and fast HMR; TypeScript catches bugs in the editor; React and Tailwind CSS speed up component building and utility styling. Together, they are built for production apps, scaling teams, and modern enterprise software.</p>
+                  <p className="linkedin-post-copy"><strong>The verdict? Learn both.</strong> Plain JavaScript gives you the essential foundation, while TypeScript + Vite gives you a powerful developer experience for building modern apps at full speed. Master the basics with JS, then supercharge your workflow with TS + Vite.</p>
+                  <div className="linkedin-post-services">#WebDev · #JavaScript · #TypeScript · #Vite · #ReactJS · #Coding · #Developer</div>
+                  <a className="linkedin-read-link" href={LINKEDIN_COMPANY_URL} target="_blank" rel="noreferrer">Visit the company page <ArrowUpRight size={15} /></a>
+                </article>
               </div>
               <div className="linkedin-post-side">
                 <div className="linkedin-badge"><Linkedin size={20} /><span className="mono">GREAT MEDIA ENTERPRISE</span></div>
