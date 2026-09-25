@@ -486,7 +486,7 @@ export default function Home() {
             <div className="section-heading linkedin-post-heading">
               <div>
                 <div className="section-kicker mono">/ FROM THE COMPANY PAGE</div>
-                <h2>Our latest<br /><span>LinkedIn post.</span></h2>
+                <h2>Our latest<br /><span>LinkedIn posts.</span></h2>
               </div>
               <p>Follow Great Media Enterprise for company updates, new work, insights, and announcements.</p>
             </div>
@@ -498,6 +498,13 @@ export default function Home() {
                   <p className="linkedin-post-copy">The platform is already operational, and we are actively improving and expanding its capabilities to make it more powerful, reliable, accessible, and competitive. This is only the beginning.</p>
                   <div className="linkedin-post-tags">#GreatMediaChecker&nbsp;&nbsp; #GreatMediaEnterprise&nbsp;&nbsp; #AI&nbsp;&nbsp; #Innovation&nbsp;&nbsp; #MadeInNigeria</div>
                   <a className="linkedin-read-link" href={LINKEDIN_POST_URL} target="_blank" rel="noreferrer">Read the full post on LinkedIn <ArrowUpRight size={15} /></a>
+                </article>
+                <article className="linkedin-post-card linkedin-post-card-uiux">
+                  <div className="linkedin-post-card-top"><div className="linkedin-avatar"><img src="/assets/great-media-logo.png" alt="" /></div><div><strong>Great Media Enterprise</strong><span>UI/UX Design · Figma Make</span></div><Linkedin size={21} /></div>
+                  <a className="linkedin-uiux-image-link" href="https://lnkd.in/e-xR-n-6" target="_blank" rel="noreferrer"><img src="/manus-storage/ui-ux-figma-make-demo_6b3a0bb4.png" alt="Great Media Enterprise UI/UX interface demo created with Figma Make" /></a>
+                  <p className="linkedin-post-copy">We’ve completed a UI/UX interface using Figma Make. Need a professional, modern interface for your website, mobile app, or software? Great Media Enterprise can help you turn your ideas into clean, user-friendly UI/UX designs before development.</p>
+                  <div className="linkedin-post-services">Website UI/UX · Mobile App UI/UX · Software Dashboard Design · Modern & User-Friendly Interfaces</div>
+                  <a className="linkedin-read-link" href="https://lnkd.in/e-xR-n-6" target="_blank" rel="noreferrer">Check out the UI/UX demo <ArrowUpRight size={15} /></a>
                 </article>
               </div>
               <div className="linkedin-post-side">
