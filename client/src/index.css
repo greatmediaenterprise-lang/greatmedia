@@ -205,7 +205,7 @@ section[id] { scroll-margin-top: 24px; }
 .linkedin-post-heading h2 { color: #10130d; }
 .linkedin-post-heading h2 span { color: rgba(16,19,13,.56); }
 .linkedin-post-heading > p { color: rgba(16,19,13,.68); }
-.linkedin-post-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(260px, .85fr); gap: 28px; align-items: stretch; }
+.linkedin-post-layout { display: grid; grid-template-columns: 1fr; gap: 22px; align-items: stretch; }
 .linkedin-post-frame { min-height: 460px; overflow: hidden; background: #f3f0e9; border: 1px solid rgba(16,19,13,.18); box-shadow: 12px 12px 0 rgba(16,19,13,.1); }
 .linkedin-post-card { min-height: 460px; padding: 30px 32px; background: #fff; color: #17202a; }
 .linkedin-post-card-uiux { margin-top: 18px; }
@@ -224,12 +224,12 @@ section[id] { scroll-margin-top: 24px; }
 .linkedin-post-services { margin-top: 20px; color: #0a66c2; font-size: 12px; line-height: 1.7; }
 .linkedin-read-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; color: #0a66c2; font-size: 12px; font-weight: 700; border-bottom: 1px solid rgba(10,102,194,.35); padding-bottom: 6px; }
 .linkedin-read-link:hover { gap: 12px; }
-.linkedin-post-side { display: flex; flex-direction: column; justify-content: center; padding: 35px; background: #10130d; color: #f3f0e9; }
-.linkedin-badge { display: inline-flex; align-items: center; gap: 10px; color: #d8ff45; margin-bottom: 30px; }
+.linkedin-post-side { display: grid; grid-template-columns: auto minmax(180px, 1fr) auto; align-items: center; gap: 24px; padding: 22px 28px; background: #10130d; color: #f3f0e9; }
+.linkedin-badge { display: inline-flex; align-items: center; gap: 10px; color: #d8ff45; margin: 0; }
 .linkedin-badge svg { fill: currentColor; }
-.linkedin-post-side h3 { margin: 0 0 14px; font-family: "Space Grotesk", sans-serif; font-size: clamp(2rem, 4vw, 3.7rem); line-height: .95; letter-spacing: -.07em; font-weight: 500; }
-.linkedin-post-side p { max-width: 300px; margin: 0 0 30px; color: rgba(243,240,233,.64); font-size: 14px; line-height: 1.55; }
-.linkedin-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.linkedin-post-side h3 { margin: 0 0 6px; font-family: "Space Grotesk", sans-serif; font-size: clamp(1.45rem, 3vw, 2.25rem); line-height: .95; letter-spacing: -.07em; font-weight: 500; }
+.linkedin-post-side p { max-width: 520px; margin: 0; color: rgba(243,240,233,.64); font-size: 13px; line-height: 1.45; }
+.linkedin-actions { display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
 .linkedin-primary, .linkedin-secondary { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; transition: transform .18s var(--ease-out), color .18s ease; }
 .linkedin-primary { padding: 12px 14px; background: #d8ff45; color: #10130d; }
 .linkedin-secondary { color: rgba(243,240,233,.7); border-bottom: 1px solid rgba(243,240,233,.3); padding-bottom: 6px; }
@@ -380,7 +380,8 @@ section[id] { scroll-margin-top: 24px; }
   .gallery-feature figcaption { grid-template-columns: 1fr 1fr; }
   .gallery-feature figcaption span:last-child { grid-column: 1 / -1; }
   .linkedin-post-layout { grid-template-columns: 1fr; }
-  .linkedin-post-side { min-height: 280px; }
+  .linkedin-post-side { min-height: 0; grid-template-columns: 1fr; gap: 15px; }
+  .linkedin-actions { justify-content: flex-start; }
   .testimonials-grid { grid-template-columns: 1fr 1fr; }
   .proof-layout { grid-template-columns: 1fr; gap: 50px; }
   .proof-side { border-left: 0; border-top: 1px solid rgba(16,19,13,.24); padding: 26px 0 0; }
@@ -402,7 +403,7 @@ section[id] { scroll-margin-top: 24px; }
   .gallery-feature figcaption { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
   .linkedin-post-section { padding: 90px 0; }
   .linkedin-post-frame, .linkedin-post-card { min-height: 430px; }
-  .linkedin-post-side { padding: 28px 22px; }
+  .linkedin-post-side { padding: 22px; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .faq-item summary { grid-template-columns: 36px 1fr 20px; gap: 10px; padding: 19px 0; }
   .faq-item > p { margin: -2px 20px 21px 46px; font-size: 13px; }
