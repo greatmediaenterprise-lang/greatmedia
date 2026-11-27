@@ -517,6 +517,23 @@ export default function Home() {
                   <div className="linkedin-post-services">#WebDev · #JavaScript · #TypeScript · #Vite · #ReactJS · #Coding · #Developer</div>
                   <a className="linkedin-read-link" href={LINKEDIN_COMPANY_URL} target="_blank" rel="noreferrer">Visit the company page <ArrowUpRight size={15} /></a>
                 </article>
+                <article className="linkedin-post-card linkedin-post-card-uiux">
+                  <div className="linkedin-post-card-top"><div className="linkedin-avatar"><img src="/assets/great-media-logo.png" alt="" /></div><div><strong>Great Media Enterprise</strong><span>Company update · Google Search</span></div><Linkedin size={21} /></div>
+                  <video className="linkedin-post-video" controls playsInline preload="metadata" aria-label="Great Media Enterprise Google discovery announcement video">
+                    <source src="/assets/great-media-on-google.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <p className="linkedin-post-copy"><strong>GREAT NEWS! YOU CAN NOW FIND US ON GOOGLE! 🌍</strong></p>
+                  <p className="linkedin-post-copy">Great Media Enterprise is now discoverable on Google, and this is another important step in our journey of building from Nigeria to the world.</p>
+                  <p className="linkedin-post-copy">For over two months now, we have maintained our presence on Google, making it easier for individuals, businesses and organisations to discover us, learn about what we do and connect with our team.</p>
+                  <p className="linkedin-post-copy">At Great Media Enterprise, we are committed to providing reliable, practical and innovative digital solutions that help businesses and individuals grow.</p>
+                  <p className="linkedin-post-copy"><strong>Our services include:</strong><br />🚀 Website and Software Development<br />🤖 AI Integration and Business Automation<br />📊 Research and Data Analysis<br />💻 Digital Solutions and Technology Services<br />⚙️ Custom Business Automation with n8n</p>
+                  <p className="linkedin-post-copy">We believe trust is built through consistency, quality and the value we deliver. You can now search for Great Media Enterprise on Google and learn more about our services.</p>
+                  <p className="linkedin-post-copy"><strong>🌐 Website:</strong> <a href="https://greatmedia.vercel.app/" target="_blank" rel="noreferrer">greatmedia.vercel.app</a></p>
+                  <p className="linkedin-post-copy">Great Media Enterprise — Building Digital Solutions from Nigeria for the World. 🌍</p>
+                  <p className="linkedin-post-copy">Thank you to everyone supporting our journey. This is just the beginning!</p>
+                  <div className="linkedin-post-services">#GreatMediaEnterprise · #GoogleSearch · #Technology · #DigitalSolutions · #BusinessAutomation · #NigeriaToTheWorld</div>
+                </article>
               </div>
               <div className="linkedin-post-side">
                 <div className="linkedin-badge"><Linkedin size={20} /><span className="mono">GREAT MEDIA ENTERPRISE</span></div>
