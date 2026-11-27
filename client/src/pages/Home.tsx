@@ -520,7 +520,7 @@ export default function Home() {
                 <article className="linkedin-post-card linkedin-post-card-uiux">
                   <div className="linkedin-post-card-top"><div className="linkedin-avatar"><img src="/assets/great-media-logo.png" alt="" /></div><div><strong>Great Media Enterprise</strong><span>Company update · Google Search</span></div><Linkedin size={21} /></div>
                   <video className="linkedin-post-video" controls playsInline preload="metadata" aria-label="Great Media Enterprise Google discovery announcement video">
-                    <source src="/assets/great-media-on-google.mp4" type="video/mp4" />
+                    <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663974242320/rBoBTbjeIsnRHhgf.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   <p className="linkedin-post-copy"><strong>GREAT NEWS! YOU CAN NOW FIND US ON GOOGLE! 🌍</strong></p>
